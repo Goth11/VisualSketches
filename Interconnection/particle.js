@@ -8,8 +8,8 @@ class Particle {
   draw() { 
     noStroke();
     for (let i = 0; i < 3; i++) {
-      let x = this.v[i].r * Math.cos(this.v[0].a);
-      let y = this.v[i].r * Math.sin(this.v[0].a);
+      let x = this.v[i].r * Math.cos(this.v[i].a);
+      let y = this.v[i].r * Math.sin(this.v[i].a);
       fill(100, 10);
       circle(x, y, 2);
     }
