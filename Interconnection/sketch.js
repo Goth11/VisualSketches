@@ -18,7 +18,7 @@ function setup() {
           ok = false;
       }
       else {
-        let scl = 0.01;
+        let scl = min(width, height) / 80000;
         let rSpeed = map(noise(i), 0, 1, -scl, scl);//random(-scl, scl);
         let scl2 = 0.0025;
         let aSpeed = map(noise(i), 0, 1, -scl2, scl2);//random(-scl2, scl2);
