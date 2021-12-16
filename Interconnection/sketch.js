@@ -18,10 +18,10 @@ function setup() {
           ok = false;
       }
       else {
-        let scl = 1;
-        let rSpeed = random(-scl, scl);
+        let scl = 0.01;
+        let rSpeed = map(noise(i), 0, 1, -scl, scl);//random(-scl, scl);
         let scl2 = 0.0025;
-        let aSpeed = random(-scl2, scl2);
+        let aSpeed = map(noise(i), 0, 1, -scl2, scl2);//random(-scl2, scl2);
         arr.push(new Particle(vertices, rSpeed, aSpeed))
       }
     }
@@ -32,7 +32,7 @@ function setup() {
 function draw() {
   //background(0);
   translate(width/2,height/2);
-  for (let ind = 0; ind < 10; ind++)
+  for (let ind = 0; ind < 1; ind++)
   for (let i = 0; i < arr.length; i++) {
     arr[i].draw();
     arr[i].update();
