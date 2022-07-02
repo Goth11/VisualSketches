@@ -1,3 +1,3 @@
 # Snake game
 
-![snake](https://user-images.githubusercontent.com/42772160/177006249-156d9fd3-6b13-4917-95eb-80c19d9a0ac5.png)
+![snake](https://user-images.githubusercontent.com/42772160/177006280-27277e11-993c-467b-90c6-2e8f01de52b0.png)
